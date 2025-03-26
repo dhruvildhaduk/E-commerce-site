@@ -25,17 +25,20 @@ const Footer = () => {
         ))}
       </ul>
 
-      {/* Social Media Icons */}
+      {/* Social Media Icons with pulse animation */}
       <div className="footer-social-icon flex gap-5">
-        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-150 hover:bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#833AB4] hover:scale-125 hover:shadow-lg">
+        {/* Instagram Icon with pulse animation */}
+        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-300 hover:bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#833AB4] hover:scale-110 hover:animate-pulse hover:shadow-[0_10px_20px_rgba(0,0,0,0.3)]">
           <img src={instagram_icon} alt="instagram" className="w-6 h-6" />
         </div>
 
-        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-150 hover:bg-gradient-to-r from-[#E60023] via-[#FF4242] to-[#FF8C42] hover:scale-125 hover:shadow-lg">
+        {/* Pinterest Icon with pulse animation */}
+        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-300 hover:bg-gradient-to-r from-[#E60023] via-[#FF4242] to-[#FF8C42] hover:scale-110 hover:animate-pulse hover:shadow-[0_0_20px_rgba(255,66,66,0.7)]">
           <img src={pintester_icon} alt="pinterest" className="w-6 h-6" />
         </div>
 
-        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-150 hover:bg-gradient-to-r from-[#25D366] via-[#128C7E] to-[#075E54] hover:scale-125 hover:shadow-lg">
+        {/* WhatsApp Icon with pulse animation */}
+        <div className="footer-icons-container p-[10px] pb-[8px] bg-[#Fbfbfb] border-[1px] border-solid border-[#ebebeb] rounded-xl transition-all duration-300 hover:bg-gradient-to-r from-[#25D366] via-[#128C7E] to-[#075E54] hover:scale-110 hover:animate-pulse hover:shadow-xl">
           <img src={whatsapp_icon} alt="whatsapp" className="w-6 h-6" />
         </div>
       </div>
@@ -50,3 +53,4 @@ const Footer = () => {
 };
 
 export default Footer;
+  
