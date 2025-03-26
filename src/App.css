@@ -1,0 +1,38 @@
+.cart-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Pulse animation for item count */
+  .cart-icon span {
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Dropdown styling */
+  .cart-icon .absolute {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .cart-icon .absolute.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  /* Hover effect on cart dropdown */
+  .cart-item:hover {
+    background: #f1f1f1;
+    transition: background 0.2s ease-in;
+  }
+  
